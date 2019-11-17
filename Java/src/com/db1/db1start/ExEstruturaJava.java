@@ -76,7 +76,50 @@ public class ExEstruturaJava {
 //                cores.sort(Collections.reverseOrder());
 //                System.out.println("Lista Descrecente: " + cores);
 
+        //Método que receba uma lista de números e retorne um mapa com listas de números pares e impares
+
+
+        Map<String, List<Integer>> mapParesImpares = mapParesImpares(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9));
+
+        System.out.println("Impressao dos Numeros Pares");
+        List<Integer> listaPares = mapParesImpares.get("pares");
+        listaPares.forEach(System.out::println);
+
+        System.out.println("\n");
+
+        System.out.println("Impressao dos Numeros Impares");
+        List<Integer> listaImpares = mapParesImpares.get("impares");
+        listaImpares.forEach(System.out::println);
+
     }//Fim método principal
+    public static Map<String, List<Integer>> mapParesImpares(List<Integer> numeros) {
+
+        // Instancia uma lista para numeros pares e uma para os impares
+        List<Integer> listaPares = new ArrayList<>();
+        List<Integer> listaImpares = new ArrayList<>();
+
+        // Para cadas numero na lista de numeros passados no parametro faça
+        numeros.forEach(numero -> {
+            // Se o numero for divisivel por 2 adicione-o a lista de pares
+            if (numero % 2 == 0) listaPares.add(numero);
+                // Senao adicione-o a lista de impares
+            else listaImpares.add(numero);
+        });
+
+        // Criasse o Map
+        Map<String, List<Integer>> resultado = new HashMap<>();
+
+        // Adicionasse a lista de numeros pares
+        resultado.put("pares", listaPares);
+
+        // Adicionasse a lista de numeros impares
+        resultado.put("impares", listaImpares);
+
+        // O resultado sera uma map onde para a chave "pares"
+        // tera uma lista contendo os numeros pares e para a chave "impares"
+        // uma lista dos numeros impares
+        return resultado;
+    }
 
     private static void separar() {
         System.out.println("------------------");

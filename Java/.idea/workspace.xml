@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b08f035-d751-4f21-b0cd-b75eeabca27e" name="Default Changelist" comment="" />
+    <list default="true" id="9b08f035-d751-4f21-b0cd-b75eeabca27e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/db1start/com/db1/db1start/ExEstruturaJava.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/db1start/com/db1/db1start/ExEstruturaJava.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/db1/db1start/ExEstruturaJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/db1/db1start/ExEstruturaJava.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,12 +20,17 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1TcfAYSEn8XhFZ4Q1UUOkHYKQph" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -37,7 +47,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AppTest">
+  <component name="RunManager" selected="Application.ExEstruturaJava">
     <configuration name="ExEstruturaJava" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.db1.db1start.ExEstruturaJava" />
       <module name="db1start" />
@@ -113,8 +123,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AppTest" />
         <item itemvalue="Application.ExEstruturaJava" />
+        <item itemvalue="JUnit.AppTest" />
         <item itemvalue="Application.UsandoListas" />
         <item itemvalue="JUnit.AppTest.testeQtdd" />
         <item itemvalue="JUnit.AppTest.testeContComEspacos" />
@@ -140,10 +150,25 @@
       <workItem from="1573888293771" duration="136000" />
       <workItem from="1573938871629" duration="4540000" />
       <workItem from="1573959127695" duration="26000" />
+      <workItem from="1573959984013" duration="2488000" />
+      <workItem from="1573962594821" duration="672000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
