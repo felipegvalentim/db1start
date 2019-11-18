@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b08f035-d751-4f21-b0cd-b75eeabca27e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/db1start/com/db1/db1start/ExEstruturaJava.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/db1start/com/db1/db1start/ExEstruturaJava.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/db1/db1start/ExEstruturaJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/db1/db1start/ExEstruturaJava.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -152,6 +150,8 @@
       <workItem from="1573959127695" duration="26000" />
       <workItem from="1573959984013" duration="2488000" />
       <workItem from="1573962594821" duration="672000" />
+      <workItem from="1573973472816" duration="96000" />
+      <workItem from="1574054353629" duration="3563000" />
     </task>
     <servers />
   </component>

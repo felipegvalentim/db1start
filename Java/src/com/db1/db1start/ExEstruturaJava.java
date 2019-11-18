@@ -9,119 +9,104 @@ import static java.util.Collections.*;
 
 
 public class ExEstruturaJava {
-    //Método que retorne os nomes das cores que você mais gosta
     public static void main(String[] args) {
 
-        //Método que retorne os nomes das cores que você mais gosta
+        //Exibir Cores Favoritas
+        System.out.println("Lista de cores Favoritas: "+coresFavoritas());
+        separar();
 
-//        List<String> cores = new ArrayList<>();
-//        cores.add("Verde");
-//        cores.add("Amarelo");
-//        cores.add("Branco");
-//        imprimir(cores);
-//    }
-//    private static void imprimir( List<String> cores) {
-//        System.out.println(cores);
-//    }
+        //Exibir Quantidade de Cores
+        listaQtdd();
+        separar();
+
+        //Removendo a segunda posição
+        removeString();
+        separar();
+
+        //Imprimindo a lista de cores do primeiro método
+        imprimirFav(coresFavoritas());
+        separar();
+
+        //Imprimindo a lista em ordem alfabética
+        imprimirEmOrdemAlfabetica(coresFavoritas());
+        separar();
+
+        //Removendo um item da lista
+        removeCor(coresFavoritas());
+        separar();
+
+        //Imprimindo a lista em ordem decrescente
+        ordemDec(coresFavoritas());
+
+    }
+
+         //Método que retorne os nomes das cores que você mais gosta
+    public static List<String> coresFavoritas(){
+        List<String> coresFav = new ArrayList<>(Arrays.asList("Preto", "Branco", "Cinza"));
+        return coresFav;
+    }
 
         //Método que dado uma lista retorne a quantidade de itens
 
-//        List<String> qtddDados = new ArrayList<>();
-//        qtddDados.add("Felipe");
-//        qtddDados.add("Flavia");
-//        qtddDados.add("Lidia");
-//        qtddDados.add("Arthur");
-//        for(Integer i = 0; qtddDados != null ; i++){
-//            i++;
-//            System.out.println(qtddDados);
-//            break;
-//        }
-//        System.out.println("Número de itens: " + qtddDados.size());
+        public static void listaQtdd(){
+        List<String> qtddDados = new ArrayList<>();
+        qtddDados.add("Felipe");
+        qtddDados.add("Flavia");
+        qtddDados.add("Lidia");
+        qtddDados.add("Arthur");
+        for(Integer i = 0; qtddDados != null ; i++){
+            i++;
+            System.out.println("Lista de Itens: " + qtddDados);
+            break;
+        }
+        System.out.println("Número de itens: " + qtddDados.size());}
 
         //Método que receba 3 String, adicione todos em uma lista e remova a segunda posição
 
-//        List<String> tresString = new ArrayList<>();
-//        tresString.add("Mouse");
-//        tresString.add("Teclado");
-//        tresString.add("Monitor");
-//        System.out.println("Minha lista: " + tresString);
-//
-//        tresString.remove(1); // ou tresStringremove("Teclado");
-//        System.out.println("Removendo a segunda posição: " + tresString);
+        public static void removeString(){
+        List<String> tresString = new ArrayList<>();
+        tresString.add("Mouse");
+        tresString.add("Teclado");
+        tresString.add("Monitor");
+        System.out.println("Minha lista: " + tresString);
+
+        tresString.remove(1); // ou tresStringremove("Teclado");
+        System.out.println("Removendo a segunda posição: " + tresString);}
 
         //Método que imprima a lista de cores do primeiro método
 
-//        private static void imprimir( List<String> cores) {
-//        System.out.println(cores);
-//
-//        //Método que imprima as cores do primeiro método em ordem alfabética
-//
-//        private static void imprimir( List<String> cores) {
-//            System.out.println("Lista Original: " + cores);
-//            separar();
-//            Collections.sort(cores);
-//            System.out.println("Lista em Ordem Alfabética: " + cores);
+        private static void imprimirFav(List<String> coresFav) {
+            System.out.println("Listando as cores: " + coresFav);
+        }
 
-        //Método que receba uma lista das cores que você mais gosta e o nome de uma cor a ser removida
+        //Método que imprima as cores do primeiro método em ordem alfabética
 
-//        private static void imprimir(List<String> cores){
-//            String corRemovida = cores.remove(1);
-//            System.out.println("Removendo cor: " + corRemovida + " da lista: " + cores);
-//        }
+        public static void imprimirEmOrdemAlfabetica(List<String> coresFav) {
+                System.out.println("Lista Original: " + coresFav);
+                Collections.sort(coresFav);
+                System.out.println("Lista em Ordem Alfabética: " + coresFav);
+                }
 
-        //Método que receba a lista de cores que você gosta e imprima em ordem decrescente (alfabética)
-//            private static void imprimir( List<String> cores) {
-//                System.out.println("Lista Original: " + cores);
-//                separar();
-//                cores.sort(Collections.reverseOrder());
-//                System.out.println("Lista Descrecente: " + cores);
+                //Método que receba uma lista das cores que você mais gosta e o nome de uma cor a ser removida
 
-        //Método que receba uma lista de números e retorne um mapa com listas de números pares e impares
+                private static void removeCor (List<String> coresFav){
+                    String corRemovida = coresFav.remove(1);
+                    System.out.println("Removendo a cor " + corRemovida + " da lista: " + coresFav);
+                }
 
+                //Método que receba a lista de cores que você gosta e imprima em ordem decrescente(alfabética)
 
-        Map<String, List<Integer>> mapParesImpares = mapParesImpares(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9));
+            private static void ordemDec (List<String> coresFav){
+                    System.out.println("Lista Original: " + coresFav);
+                    coresFav.sort(Collections.reverseOrder());
+                    System.out.println("Lista Descrecente: " + coresFav);
+            }
 
-        System.out.println("Impressao dos Numeros Pares");
-        List<Integer> listaPares = mapParesImpares.get("pares");
-        listaPares.forEach(System.out::println);
+    //Método que receba uma lista de números e retorne um mapa com listas de números pares e impares
 
-        System.out.println("\n");
+    //Não consegui concluir o exercicio
 
-        System.out.println("Impressao dos Numeros Impares");
-        List<Integer> listaImpares = mapParesImpares.get("impares");
-        listaImpares.forEach(System.out::println);
-
-    }//Fim método principal
-    public static Map<String, List<Integer>> mapParesImpares(List<Integer> numeros) {
-
-        // Instancia uma lista para numeros pares e uma para os impares
-        List<Integer> listaPares = new ArrayList<>();
-        List<Integer> listaImpares = new ArrayList<>();
-
-        // Para cadas numero na lista de numeros passados no parametro faça
-        numeros.forEach(numero -> {
-            // Se o numero for divisivel por 2 adicione-o a lista de pares
-            if (numero % 2 == 0) listaPares.add(numero);
-                // Senao adicione-o a lista de impares
-            else listaImpares.add(numero);
-        });
-
-        // Criasse o Map
-        Map<String, List<Integer>> resultado = new HashMap<>();
-
-        // Adicionasse a lista de numeros pares
-        resultado.put("pares", listaPares);
-
-        // Adicionasse a lista de numeros impares
-        resultado.put("impares", listaImpares);
-
-        // O resultado sera uma map onde para a chave "pares"
-        // tera uma lista contendo os numeros pares e para a chave "impares"
-        // uma lista dos numeros impares
-        return resultado;
-    }
-
-    private static void separar() {
-        System.out.println("------------------");
-    }
+        private static void separar(){
+            System.out.println("------------------");
+        };
 };
