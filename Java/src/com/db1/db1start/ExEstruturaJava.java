@@ -6,8 +6,6 @@ import java.util.Arrays;
 import java.util.List;
 import static java.util.Collections.*;
 
-
-
 public class ExEstruturaJava {
     public static void main(String[] args) {
 
@@ -37,7 +35,6 @@ public class ExEstruturaJava {
 
         //Imprimindo a lista em ordem decrescente
         ordemDec(coresFavoritas());
-
     }
 
          //Método que retorne os nomes das cores que você mais gosta
@@ -48,22 +45,20 @@ public class ExEstruturaJava {
 
         //Método que dado uma lista retorne a quantidade de itens
 
-        public static void listaQtdd(){
+    public static void listaQtdd(){
         List<String> qtddDados = new ArrayList<>();
         qtddDados.add("Felipe");
         qtddDados.add("Flavia");
         qtddDados.add("Lidia");
         qtddDados.add("Arthur");
-        for(Integer i = 0; qtddDados != null ; i++){
-            i++;
-            System.out.println("Lista de Itens: " + qtddDados);
-            break;
-        }
-        System.out.println("Número de itens: " + qtddDados.size());}
+        qtddDados.add("Rogerio");
+        System.out.println("Lista de Itens: " + qtddDados);
+        System.out.println("Número de itens: " + qtddDados.size());
+    }
 
         //Método que receba 3 String, adicione todos em uma lista e remova a segunda posição
 
-        public static void removeString(){
+    public static void removeString(){
         List<String> tresString = new ArrayList<>();
         tresString.add("Mouse");
         tresString.add("Teclado");
@@ -75,38 +70,38 @@ public class ExEstruturaJava {
 
         //Método que imprima a lista de cores do primeiro método
 
-        private static void imprimirFav(List<String> coresFav) {
+    private static void imprimirFav(List<String> coresFav) {
             System.out.println("Listando as cores: " + coresFav);
         }
 
         //Método que imprima as cores do primeiro método em ordem alfabética
 
-        public static void imprimirEmOrdemAlfabetica(List<String> coresFav) {
-                System.out.println("Lista Original: " + coresFav);
-                Collections.sort(coresFav);
-                System.out.println("Lista em Ordem Alfabética: " + coresFav);
-                }
+    public static void imprimirEmOrdemAlfabetica(List<String> coresFav) {
+        System.out.println("Lista Original: " + coresFav);
+        Collections.sort(coresFav);
+        System.out.println("Lista em Ordem Alfabética: " + coresFav);
+    }
 
-                //Método que receba uma lista das cores que você mais gosta e o nome de uma cor a ser removida
+        //Método que receba uma lista das cores que você mais gosta e o nome de uma cor a ser removida
 
-                private static void removeCor (List<String> coresFav){
-                    String corRemovida = coresFav.remove(1);
-                    System.out.println("Removendo a cor " + corRemovida + " da lista: " + coresFav);
-                }
+    private static void removeCor (List<String> coresFav){
+        String corRemovida = coresFav.remove(1);
+        System.out.println("Removendo a cor " + corRemovida + " da lista: " + coresFav);
+     }
 
-                //Método que receba a lista de cores que você gosta e imprima em ordem decrescente(alfabética)
+        //Método que receba a lista de cores que você gosta e imprima em ordem decrescente(alfabética)
 
-            private static void ordemDec (List<String> coresFav){
-                    System.out.println("Lista Original: " + coresFav);
-                    coresFav.sort(Collections.reverseOrder());
-                    System.out.println("Lista Descrecente: " + coresFav);
-            }
+    private static void ordemDec (List<String> coresFav){
+        System.out.println("Lista Original: " + coresFav);
+        coresFav.sort(Collections.reverseOrder());
+        System.out.println("Lista Descrecente: " + coresFav);
+    }
 
     //Método que receba uma lista de números e retorne um mapa com listas de números pares e impares
 
-    //Não consegui concluir o exercicio
 
-        private static void separar(){
-            System.out.println("------------------");
-        };
+
+    private static void separar(){
+        System.out.println("------------------");
+    };
 };
